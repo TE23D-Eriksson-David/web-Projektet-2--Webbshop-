@@ -8,19 +8,28 @@
     <title>Web Projekt 2 Webbshop</title>
 </head>
 <body>
+
+    <!-- Huvudet med knappar till "Varukorg,Meny,Språk" -->
     <header>
         <h1>Skridskoshopen</h1>
-        <button type="button">Språk</button>
-        <button type="button">Meny</button>
-        <button type="button">Varukorg</button>
+        <button type="button">Språk</button>    <!--Ändra språk med majgik  -->
+        <button type="button">Meny</button>      <!--Knapp som kommer kunnas användas som en nav så man kan navigera sidan -->
+        <button type="button">Varukorg</button>  <!-- Ska länka till ny sida där saker lägs till i varukorgen
+                                                Bild och suman ska kalkuleras, deta måste ligga i local storage -->
     </header>
-    <div>
+
+    <!-- Banderoll -->
+    <div id="Banderoll">
         <img src="./img/Snöflinga.png" alt="Bild av en snöflinga">
         <p>Välkomen till skridsko shopen</p>
         <img src="./img/Snöflinga.png" alt="Bild av en snöflinga">
     </div>
-    <div></div>
-    <div>
+
+    <!-- Filter -->
+     <div id="Filter"></div > <!-- Någonting som jag inte vet hur jag ska skapa.-->
+
+    <!-- Produkterna (Jag undrar om man kan göra om deta till ett obejekt och sedan skappa flera instanser?)-->
+    <div id="Produkter">
         <article id="Produkt_1">
             <img src="./img/konståknings_skridsko1.jpg" alt="Kånståknings Skridsko">
             <p>Pris: 1320 kr</p>
@@ -53,12 +62,28 @@
         </article>
     </div>
 
-    <div></div>
-    <div>
-        <p></p>
+    <!-- Yterligare beskrivning av vald produkt -->
+    <div id="Storbeskrivning">
+        <div>
+            <!-- <img src="" alt="Förstårad bild av markerad produkt"> 
+             Måste vara utmarkerat, för att man inte kan ha en tom tag 
+             Vilket inebär att du behöver skappa elementet och bilden 
+             när någon tryker på produkten. -->
+        </div>
+        <div>
+            <p>vg</p>  <!--Text för att beskriva produckt i detalj ska ändras när produkt markeras -->
+        </div>
     </div>
+
+    <!-- Foten, länkar och yterligare laglig information -->
     <footer>
-        <p></p>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aut quos aperiam perspiciatis, autem at dolore cum dolorem recusandae officiis quis beatae doloremque dolorum quibusdam vero explicabo modi amet itaque?</p>
     </footer>
+
 </body>
 </html>

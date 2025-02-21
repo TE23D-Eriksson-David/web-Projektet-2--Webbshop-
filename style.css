@@ -1,0 +1,41 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh, 40vh, 150vh, 40vh, 40vh;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+#Banderoll{
+    display: flex;
+    flex-direction: row;
+}
+
+#Filter{
+    display: flex;
+    flex-direction: column;
+}
+
+#Produckter{
+    display: flex;
+    flex-direction: column;
+}
+
+#Storbeskrivning{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    width: 10vw;
+    height: 10vh;
+}
