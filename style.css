@@ -1,18 +1,35 @@
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20vh, 40vh, 150vh, 40vh, 40vh;
+    grid-template-rows: 25vh 40vh 75vh 100vh 75vh 30vh;
+    /* font-family: ; */
 }
 
 
 header{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
+    #Buttons{
+        justify-content:space-around;
+    }
+   
+    h1{
+        font-size: 250%;
+    }
 }
 
 #Banderoll{
     display: flex;
     flex-direction: row;
+    font-size: 4.5vw;
+    justify-content: space-between;
+
+    img{
+        width: 20vw;
+        height: 40vh;
+    }
 }
 
 #Filter{
@@ -20,9 +37,25 @@ header{
     flex-direction: column;
 }
 
-#Produckter{
-    display: flex;
-    flex-direction: column;
+#Produkter{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows:40vh 40vh;
+    background-color: antiquewhite;
+}
+
+#Storbeskrivning{
+#Produkt_stor{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:75vh, auto;
+
+    img{
+        width: 50vw;
+        height: 75vh;
+    }
+}
+
 }
 
 #Storbeskrivning{
@@ -33,6 +66,13 @@ header{
 footer{
     display: flex;
     flex-direction: row;
+    ul{
+        display: flex;
+        padding-right: 40px;
+        li{
+            width: 20vw;
+        }
+    }
 }
 
 img{

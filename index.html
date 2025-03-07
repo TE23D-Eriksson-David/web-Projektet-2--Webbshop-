@@ -11,11 +11,13 @@
 
     <!-- Huvudet med knappar till "Varukorg,Meny,Språk" -->
     <header>
-        <h1>Skridskoshopen</h1>
-        <button type="button">Språk</button>    <!--Ändra språk med majgik  -->
-        <button type="button">Meny</button>      <!--Knapp som kommer kunnas användas som en nav så man kan navigera sidan -->
-        <button type="button">Varukorg</button>  <!-- Ska länka till ny sida där saker lägs till i varukorgen
-                                                Bild och suman ska kalkuleras, deta måste ligga i local storage -->
+        <h1><u>Skridskoshopen</u></h1>
+        <div id="Buttons">
+            <button type="button">Språk</button>    <!--Ändra språk med majgik  -->
+            <button type="button">Meny</button>      <!--Knapp som kommer kunnas användas som en nav så man kan navigera sidan -->
+            <button type="button">Varukorg</button>  <!-- Ska länka till ny sida där saker lägs till i varukorgen
+                                                    Bild och suman ska kalkuleras, deta måste ligga i local storage -->
+        </div>
     </header>
 
     <!-- Banderoll -->
@@ -26,7 +28,9 @@
     </div>
 
     <!-- Filter -->
-     <div id="Filter"></div > <!-- Någonting som jag inte vet hur jag ska skapa.-->
+     <div id="Filter">
+        <p>m</p>
+     </div > <!-- Någonting som jag inte vet hur jag ska skapa.-->
 
     <!-- Produkterna (Jag undrar om man kan göra om deta till ett obejekt och sedan skappa flera instanser?)-->
     <div id="Produkter">
@@ -34,53 +38,57 @@
             <img src="./img/konståknings_skridsko1.jpg" alt="Kånståknings Skridsko">
             <p>Pris: 1320 kr</p>
             <p>Beskrivning som inte skrivits</p>
+            <button type="button">lägg till till varukorgen</button>
         </article>
         <article id="Produkt_2">
             <img src="./img/Kånståknings_Skridsko.png" alt="Kånståknings Skridsko">
             <p>Pris: 1320 kr</p>
             <p>Beskrivning som inte skrivits</p>
+            <button type="button">lägg till till varukorgen</button>
         </article>
         <article id="Produkt_3">
             <img src="./img/Kånståknings_skridsko2.webp" alt="Kånståknings Skridsko">
             <p>Pris: 1320 kr</p>
             <p>Beskrivning som inte skrivits</p>
+            <button type="button">lägg till till varukorgen</button>
         </article>
         <article id="Produkt_4">
             <img src="./img/LångfärdsSkridsko.webp" alt="Långfärds Skridsko">
             <p>Pris: 1320 kr</p>
             <p>Beskrivning som inte skrivits</p>
+            <button type="button">lägg till till varukorgen</button>
         </article>
         <article id="Produkt_5">
             <img src="./img/Skridsko1.jpg" alt="Hokey Skridsko">
             <p>Pris: 1320 kr</p>
             <p>Beskrivning som inte skrivits</p>
+            <button type="button">lägg till till varukorgen</button>
         </article>
         <article id="Produkt_6">
             <img src="./img/skridsko2.jpeg" alt="Hokey Skridsko">
             <p>Pris: 1320 kr</p>
             <p>Beskrivning som inte skrivits</p>
+            <button type="button">lägg till till varukorgen</button>
         </article>
     </div>
 
     <!-- Yterligare beskrivning av vald produkt -->
     <div id="Storbeskrivning">
-        <div>
-            <!-- <img src="" alt="Förstårad bild av markerad produkt"> 
-             Måste vara utmarkerat, för att man inte kan ha en tom tag 
-             Vilket inebär att du behöver skappa elementet och bilden 
-             när någon tryker på produkten. -->
-        </div>
-        <div>
-            <p>vg</p>  <!--Text för att beskriva produckt i detalj ska ändras när produkt markeras -->
-        </div>
+        <article id="Produkt_stor">
+            <img src="./img/LångfärdsSkridsko.webp" alt="Långfärds Skridsko">
+            <div>
+            <p>Pris: 1320 kr</p>
+            <p>Beskrivning som inte skrivits</p>
+            </div>
+        </article>
     </div>
 
     <!-- Foten, länkar och yterligare laglig information -->
     <footer>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="https://www.systembolaget.se/">Länk till systembolaget</a></li>
+                <li><a href="https://www.ikea.com/se/sv/shoppingcart/">Länk till Ikea</a></li>
+                <li><a href="https://www.coop.se/foretag/">Länk till Coop</a></li>
             </ul>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aut quos aperiam perspiciatis, autem at dolore cum dolorem recusandae officiis quis beatae doloremque dolorum quibusdam vero explicabo modi amet itaque?</p>
     </footer>
