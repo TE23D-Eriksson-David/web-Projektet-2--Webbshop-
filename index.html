@@ -8,29 +8,100 @@
     <title>Web Projekt 2 Webbshop</title>
 </head>
 <body>
-
     <!-- Huvudet med knappar till "Varukorg,Meny,Språk" -->
     <header>
-        <h1><u>Skridskoshopen</u></h1>
+        <img src="./img/Skärmbild 2025-03-11 201801.webp" alt="Loga-skridsko shopen">
+        <h1>Skridskoshopen</h1>
         <div id="Buttons">
-            <button type="button">Språk</button>    <!--Ändra språk med majgik  -->
-            <button type="button">Meny</button>      <!--Knapp som kommer kunnas användas som en nav så man kan navigera sidan -->
-            <button type="button">Varukorg</button>  <!-- Ska länka till ny sida där saker lägs till i varukorgen
+            <button   id="button-språk"  type="button">Språk</button>    <!--Ändra språk med majgik  -->
+            <button  id="button-meny"   type="button">Meny</button>      <!--Knapp som kommer kunnas användas som en nav så man kan navigera sidan -->
+            <button     id="button-varukorg" type="button">Varukorg</button>  <!-- Ska länka till ny sida där saker lägs till i varukorgen
                                                     Bild och suman ska kalkuleras, deta måste ligga i local storage -->
         </div>
     </header>
 
     <!-- Banderoll -->
     <div id="Banderoll">
-        <img src="./img/Snöflinga.png" alt="Bild av en snöflinga">
         <p>Välkomen till skridsko shopen</p>
-        <img src="./img/Snöflinga.png" alt="Bild av en snöflinga">
     </div>
 
     <!-- Filter -->
      <div id="Filter">
-        <p>m</p>
-     </div > <!-- Någonting som jag inte vet hur jag ska skapa.-->
+        <div class="dropdown"> <!-- Drop down -->
+            <button type="button" class="dropbtn">Storlek</button>
+            <div class="dropdown-content">
+                <fieldset>
+                    <legend></legend>
+                      <input type="radio" id="Smal" name="input1" value="huey" checked >
+                      <label for="Smal">25 - 30</label>
+
+                      <input type="radio" id="Medium" name="input1" value="dewey" >
+                      <label for="Medium">30 - 35</label>
+
+                      <input type="radio" id="Normal" name="input1" value="louie" >
+                      <label for="Normal">35 - 40</label>
+
+                      <input type="radio" id="Biger" name="input1" value="dewey" >
+                      <label for="Biger">40 - 45</label>
+
+                      <input type="radio" id="Biggest" name="input1" value="louie" >
+                      <label for="Biggest">45+</label>
+                  </fieldset>
+            </div>
+        </div>
+
+        <div class="dropdown2"> <!-- Drop down -->
+            <button type="button" class="dropbtn2">Variant</button>
+            <div class="dropdown-content2">
+                <fieldset>
+                    <legend></legend>
+                      <input type="radio" id="variant1" name="input2" value="variant1" checked >
+                      <label for="variant1">konståknings skridsko</label>
+
+                      <input type="radio" id="variant2" name="input2" value="variant2" >
+                      <label for="variant2">Hockey skridsko</label>
+
+                      <input type="radio" id="variant3" name="input2" value="variant3" >
+                      <label for="variant3">Långfärds skridsko</label>
+                  </fieldset>
+            </div>
+        </div>
+
+        <div class="dropdown3"> <!-- Drop down -->
+            <button type="button" class="dropbtn3">Pris</button>
+            <div class="dropdown-content3">
+                <fieldset>
+                    <legend></legend>
+                      <input type="radio" id="Pris1" name="input3" value="Pris1" checked >
+                      <label for="Pris1">Prisvärt</label>
+
+                      <input type="radio" id="Pris2" name="input3" value="Pris2" >
+                      <label for="Pris2">Premium</label>
+
+                      <input type="radio" id="Pris3" name="input3" value="Pris3" >
+                      <label for="Pris3">Profitionelt</label>
+                  </fieldset>
+            </div>
+        </div>
+
+        <div class="dropdown4"> <!-- Drop down -->
+            <button type="button" class="dropbtn4">Snörning</button>
+            <div class="dropdown-content4">
+                <fieldset>
+                    <legend></legend>
+                      <input type="radio" id="Snörning1" name="input4" value="Snörning1" checked >
+                      <label for="Snörning1">Kardborre</label>
+
+                      <input type="radio" id="Snörning2" name="input4" value="Snörning2" >
+                      <label for="Snörning2">Snöre</label>
+
+                      <input type="radio" id="Snörning3" name="input4" value="Snörning3" >
+                      <label for="Snörning3">Blixtlås</label>
+                  </fieldset>
+            </div>
+        </div>
+
+    </div > <!-- Någonting som jag inte vet hur jag ska skapa.-->
 
     <!-- Produkterna (Jag undrar om man kan göra om deta till ett obejekt och sedan skappa flera instanser?)-->
     <div id="Produkter">
