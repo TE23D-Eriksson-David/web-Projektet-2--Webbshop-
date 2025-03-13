@@ -94,7 +94,7 @@ header{
         text-shadow: 2px 2px 4px #000000; 
     }
 
-.Arrowimg{
+#Arrowimg1,#Arrowimg2,#Arrowimg3,#Arrowimg4{
 width: 5vw;
 height: 10vh;
 rotate: 90deg;
@@ -125,17 +125,16 @@ img{
         justify-content:space-between;
         border: 1vw, solid, #4e7cc5;
 
-        img{
-            width: auto;
-            height: auto;
-        } 
-
         .skridskoimg{
-            margin-left: 5vw;
+            margin-left: 2.5vw;
             border: 1vw,solid,#484444;
         }
 
-        button{
+        img{
+            width: 25vw;
+        }
+
+        .productVarukorgknapp{
             background-color: green;
             color: white;
             text-shadow: 2px 2px 4px #000000;
@@ -150,6 +149,7 @@ img{
             border: none;
             font-size: x-large ;
             border-radius: 15%;
+            margin-right: 2.5vw;
 
             display: flex;
             flex-direction: column;
@@ -200,7 +200,6 @@ img{
         margin-right: 9vw;
         padding-left: 2vw;
         background-color: gray;
-
     }
 }
 
@@ -230,13 +229,25 @@ footer{
 
 
 
-
-
-/* Dropdown Button */
-.dropbtn {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset; 
+#btnid{  /* Färger för Button */
     margin-top: 5vh;
     background-color: #7004aa;
+}
+#btnid2{
+    background-color: #961ab8;
+}
+#btnid3{
+    background-color: #aa0483;
+}
+#btnid4{
+    background-color: #aa045f;
+}
+
+
+ /* Stillen för knappen */
+.dropbtn, .dropbtn2, .dropbtn3, .dropbtn4 {
+    margin-left: 1.5vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset; 
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -244,216 +255,74 @@ footer{
     width: 95vw;
     height: 20vh;
   }
+
   
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    align-self: center; 
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+
+  /* Dropp down knapparnas still */
+.dropdown-content, .dropdown-content2, .dropdown-content3, .dropdown-content4 {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+    margin-left: 1.5vw;
+}
 
-  /* Links inside the dropdown */
-  .dropdown-content label {
+
+  
+  /* Texten */
+.dropdown-content label, .dropdown-content2 label, .dropdown-content3 label, .dropdown-content3 label, .dropdown-content4 label {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
-  /* Change color of dropdown links on hover */
-  .dropdown-content label:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #610393;}
+ 
+.dropdown-content label:hover, .dropdown-content2 label:hover, .dropdown-content3 label:hover, .dropdown-content4 label:hover 
+  {background-color: #ddd;}
+  /* Effekter & Visa individuela filter */
+.dropdown:hover .dropdown-content, .dropdown2:hover .dropdown-content2, .dropdown3:hover .dropdown-content3,.dropdown4:hover .dropdown-content4
+   {display: block;}
 
 
-  /* Highlight the label when the corresponding radio button is checked */
-  .dropdown input[type="radio"]:checked + label {
-    background-color: #7004aa; /* Highlighted color */
+  
+.dropdown:hover .dropbtn {background-color: #610393;}
+
+
+.dropdown input[type="radio"]:checked + label {
+    background-color: #7004aa; 
     color: white;
 }
   
 
-
-/* Dropdown Button */
-.dropbtn2 {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset; 
-    background-color: #961ab8;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    width: 95vw;
-    height: 20vh;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown2 {
-    position: relative;
-    display: inline-block;
-    align-self: center; 
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content2 {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-      /* Links inside the dropdown */
-      .dropdown-content2 label {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-      
-      /* Change color of dropdown links on hover */
-      .dropdown-content2 label:hover {background-color: #ddd;}
-      
-      /* Show the dropdown menu on hover */
-      .dropdown2:hover .dropdown-content2 {display: block;}
-      
-      /* Change the background color of the dropdown button when the dropdown content is shown */
-      .dropdown2:hover .dropbtn2 {background-color: #7a0e98;}
+.dropdown2:hover .dropbtn2 {background-color: #7a0e98;}
     
-    /* Highlight the label when the corresponding radio button is checked */
-    .dropdown2 input[type="radio"]:checked + label {
-        background-color: #961ab8; /* Highlighted color */
+
+.dropdown2 input[type="radio"]:checked + label {
+        background-color: #961ab8; 
         color: white;
     }
-
-
-  /* Dropdown Button */
-.dropbtn3 {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset; 
-    background-color: #aa0483;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    width: 95vw;
-    height: 20vh;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown3 {
-    position: relative;
-    display: inline-block;
-    align-self: center; 
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content3 {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-
-      /* Links inside the dropdown */
-      .dropdown-content3 label {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
       
-      /* Change color of dropdown links on hover */
-      .dropdown-content3 label:hover {background-color: #ddd;}
       
-      /* Show the dropdown menu on hover */
-      .dropdown3:hover .dropdown-content3 {display: block;}
-      
-      /* Change the background color of the dropdown button when the dropdown content is shown */
-      .dropdown3:hover .dropbtn3 {background-color: #8a036b;}
+.dropdown3:hover .dropbtn3 {background-color: #8a036b;}
     
     
-    /* Highlight the label when the corresponding radio button is checked */
+   
 .dropdown3 input[type="radio"]:checked + label {
-        background-color: #aa0483; /* Highlighted color */
+        background-color: #aa0483; 
         color: white;
     }
 
-
-
-
-
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown4 {
-    position: relative;
-    display: inline-block;
-    align-self: center; 
-  }
-
-
-  /* Dropdown Button */
-.dropbtn4 {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset; 
-    background-color: #aa045f;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    width: 95vw;
-    height: 20vh;
-  }
-
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content4 {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-   /* Links inside the dropdown */
-   .dropdown-content4 label {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content4 label:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown4:hover .dropdown-content4 {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown4:hover .dropbtn4 {background-color: #86044c;}
 
 
-/* Highlight the label when the corresponding radio button is checked */
+
 .dropdown4 input[type="radio"]:checked + label {
-    background-color: #aa045f; /* Highlighted color */
+    background-color: #aa045f; 
     color: white;
 }
-
 
 
 
@@ -469,12 +338,10 @@ fieldset {
     margin: 0;
 }
 
-/* Hide the radio buttons */
 input[type="radio"] {
     display: none;
 }
 
-/* Style the labels to look like selectable buttons */
 label {
     display: inline-block;
     padding: 10px 20px;
