@@ -13,7 +13,7 @@
         <img src="./img/Skärmbild 2025-03-11 201801.webp" alt="Loga-skridsko shopen">
         <h1>Skridskoshopen</h1>
         <div id="Buttons">
-            <button  id="button-språk"     type="button">Språk</button>     <!--Ändra språk med magic  -->
+            <button  id="button-språk"     type="button"> <img id="Språk-icon" src="./img/Laungade.png" alt="Språk icon"> Språk</button>     <!--Ändra språk med magic  -->
             <button  id="button-meny"      type="button"> <img id="Meny-icon" src="./img/Meny icon.webp" alt="Meny Icon">  Meny</button>      <!--Knapp som kommer kunnas användas som en nav så man kan navigera sidan -->
             <button  id="button-varukorg"  type="button"> <img id="Varukorg-icon" src="./img/Varukorg.png" alt="Varukorg Icon">  Varukorg</button>  <!-- Ska länka till ny sida där saker lägs till i varukorgen
                                                     Bild och suman ska kalkuleras, deta måste ligga i local storage -->
@@ -53,7 +53,7 @@
         </div>
 
         <div class="dropdown2"> <!-- Drop down -->
-            <button type="button" class="dropbtn2">   <img id="Variant-icon" src="./img/Kånståknings_Skridsko.png" alt="Variant Icon">  Variant <img class="Arrowimg" src="./img/Arrow.webp" alt="Arrow"></button>
+            <button type="button" class="dropbtn2">   <img id="Variant-icon" src="./img/Konståknings_Skridsko icon.png" alt="Variant Icon">  Variant <img class="Arrowimg" src="./img/Arrow.webp" alt="Arrow"></button>
             <div class="dropdown-content2">
                 <fieldset>
                     <legend></legend>
@@ -108,52 +108,52 @@
     <!-- Produkterna (Jag undrar om man kan göra om deta till ett obejekt och sedan skappa flera instanser?)-->
     <div id="Produkter">
         <article id="Produkt_1">
-            <img src="./img/konståknings_skridsko1.jpg" alt="Kånståknings Skridsko">
-            <div>
+            <img class="skridskoimg" src="./img/konståknings_skridsko1.jpg" alt="Konståknings Skridsko">
+            <div class="Prducbes">
             <p>Pris: 1320 kr</p>
             <p>Beskrivning som inte skrivits</p>
             </div>
-            <button type="button">lägg till varukorgen</button>
+            <button type="button"> <img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"> </button>
         </article>
         <article id="Produkt_2">
-            <img src="./img/Kånståknings_Skridsko.png" alt="Kånståknings Skridsko">
-            <div>
+            <img class="skridskoimg" src="./img/Skridsko3.avif" alt="Konståknings Skridsko">
+            <div class="Prducbes">
                 <p>Pris: 1320 kr</p>
                 <p>Beskrivning som inte skrivits</p>
             </div>
-            <button type="button">lägg till varukorgen</button>
+            <button type="button"> <img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"> </button>
         </article>
         <article id="Produkt_3">
-            <img src="./img/Kånståknings_skridsko2.webp" alt="Kånståknings Skridsko">
-            <div>
+            <img class="skridskoimg" src="./img/Kånståknings_skridsko2.webp" alt="Konståknings Skridsko">
+            <div class="Prducbes">
                 <p>Pris: 1320 kr</p>
                 <p>Beskrivning som inte skrivits</p>
             </div>
-            <button type="button">lägg till varukorgen</button>
+            <button type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
         </article>
         <article id="Produkt_4">
-            <img src="./img/LångfärdsSkridsko.webp" alt="Långfärds Skridsko">
-            <div>
+            <img class="skridskoimg" src="./img/LångfärdsSkridsko.webp" alt="Långfärds Skridsko">
+            <div class="Prducbes">
                 <p>Pris: 1320 kr</p>
                 <p>Beskrivning som inte skrivits</p>
             </div>
-            <button type="button">lägg till varukorgen</button>
+            <button type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
         </article>
         <article id="Produkt_5">
-            <img src="./img/Skridsko1.jpg" alt="Hokey Skridsko">
-            <div>
+            <img class="skridskoimg" src="./img/Skridsko1.jpg" alt="Hokey Skridsko">
+            <div class="Prducbes">
                 <p>Pris: 1320 kr</p>
                 <p>Beskrivning som inte skrivits</p>
             </div>
-            <button type="button">lägg till varukorgen</button>
+            <button type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
         </article>
         <article id="Produkt_6">
-            <img src="./img/skridsko2.jpeg" alt="Hokey Skridsko">
-            <div>
+            <img class="skridskoimg" src="./img/skridsko2.jpeg" alt="Hokey Skridsko">
+            <div class="Prducbes">
                 <p>Pris: 1320 kr</p>
                 <p>Beskrivning som inte skrivits</p>
             </div>
-            <button type="button">lägg till varukorgen</button>
+            <button type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
         </article>
     </div>
 
@@ -161,10 +161,12 @@
     <div id="Storbeskrivning">
         <article id="Produkt_stor">
             <img src="./img/LångfärdsSkridsko.webp" alt="Långfärds Skridsko">
-            <div>
+
+            <div id="Beskrivning-text">
             <p>Pris: 1320 kr</p>
             <p>Beskrivning som inte skrivits</p>
             </div>
+
         </article>
     </div>
 
@@ -175,7 +177,6 @@
                 <li><a href="https://www.ikea.com/se/sv/shoppingcart/">Länk till Ikea</a></li>
                 <li><a href="https://www.coop.se/foretag/">Länk till Coop</a></li>
             </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aut quos aperiam perspiciatis, autem at dolore cum dolorem recusandae officiis quis beatae doloremque dolorum quibusdam vero explicabo modi amet itaque?</p>
     </footer>
 
 </body>

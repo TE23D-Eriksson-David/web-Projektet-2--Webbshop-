@@ -1,7 +1,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 25vh 60vh 115vh 900vh 75vh 30vh;
+    grid-template-rows: 25vh 60vh 115vh auto auto 30vh;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
@@ -27,14 +27,11 @@ header{
         width: auto;
         height: auto;
     }
-    #Meny-icon{
+    #Meny-icon, #Varukorg-icon, #Språk-icon{
         width: 10vw;
         height: 15vh;
     }
-    #Varukorg-icon{
-        width: 10vw;
-        height: 15vh; 
-    }
+
 
     #button-språk, #button-varukorg, #button-meny{
         background-color: #74a0e7;
@@ -103,6 +100,10 @@ height: 10vh;
 rotate: 90deg;
 }
 
+img{
+    width: 10vw;
+    height: 10vh;
+}
 
 }
 
@@ -113,21 +114,27 @@ rotate: 90deg;
 #Produkter{
     display:grid;
     grid-template-columns:1fr;
-    grid-template-rows:repeat(6, 130vh);
-    gap: 0.5vw;
+    grid-template-rows:repeat(6, 60vh);
+    gap: 2vw;
     background-color: #4e7cc5;
 
     article{
-        display: grid;
-        grid-template-columns:1fr,1fr,1fr;
-        grid-template-rows: 120vh; 
+        display: flex;
+        flex-direction: row;
         background-color: #f1f1f1;
-        /* align-items: center; */
+        justify-content:space-between;
+        border: 1vw, solid, #4e7cc5;
 
         img{
-            width: 50vw;
-            height: 100vh;
+            width: auto;
+            height: auto;
         } 
+
+        .skridskoimg{
+            margin-left: 5vw;
+            border: 1vw,solid,#484444;
+        }
+
         button{
             background-color: green;
             color: white;
@@ -143,48 +150,83 @@ rotate: 90deg;
             border: none;
             font-size: x-large ;
             border-radius: 15%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .Varukorgimg{
+                height: auto;
+                width: 25vw;
+                padding: 0;
+            }
+
+        }
+
+        .Prducbes{
+            background-color: gainsboro;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+            width: 30vw;
+            border-radius: 2.5rem;
         }
     }
 }
 
 
-
 #Storbeskrivning{
+    background-color: #595b5e;
+
 #Produkt_stor{
     display: grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows:75vh, auto;
-    background-color: #4e7cc5;
+    grid-template-columns:1fr;
+    grid-template-rows:auto auto;
+
+    
     img{
-        width: 50vw;
-        height: 75vh;
+        padding-top: 10vh;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        height:auto;
+        width:80vw;
+    }
+
+    #Beskrivning-text{
+        margin-left: 9vw;
+        margin-right: 9vw;
+        padding-left: 2vw;
+        background-color: gray;
+
     }
 }
 
 }
 
-#Storbeskrivning{
-    display: flex;
-    flex-direction: column;
-}
 
 footer{
-    background-color: rgb(155, 152, 152);
-    display: flex;
-    flex-direction: row;
+    background-color: rgb(20, 19, 19);
+    color: white;
+    align-content: center;
     ul{
         display: flex;
-        padding-right: 40px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
         li{
-            width: 20vw;
+            a{
+                color: white;
+            }
+            
+            
         }
     }
 }
 
-img{
-    width: 10vw;
-    height: 10vh;
-}
+
 
 
 
