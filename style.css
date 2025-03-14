@@ -94,10 +94,16 @@ header{
         text-shadow: 2px 2px 4px #000000; 
     }
 
+    .rotate{
+        transform:rotate(90deg);
+        transition: transform 0.3s ease-in-out;
+    }
+
 #Arrowimg1,#Arrowimg2,#Arrowimg3,#Arrowimg4{
 width: 5vw;
 height: 10vh;
 rotate: 90deg;
+transition: transform 0.3s ease-out;
 }
 
 img{
@@ -288,7 +294,12 @@ footer{
 
 
   
-.dropdown:hover .dropbtn {background-color: #610393;}
+.dropdown:hover .dropbtn {background-color: #610393;
+    #Arrowimg1{
+        transform:rotate(180deg);
+        transition: transform 0.3s ease-in-out;
+    }
+}
 
 
 .dropdown input[type="radio"]:checked + label {
@@ -297,7 +308,12 @@ footer{
 }
   
 
-.dropdown2:hover .dropbtn2 {background-color: #7a0e98;}
+.dropdown2:hover .dropbtn2 {background-color: #7a0e98;
+    #Arrowimg2{
+        transform:rotate(180deg);
+        transition: transform 0.3s ease-in-out;
+    }
+}
     
 
 .dropdown2 input[type="radio"]:checked + label {
@@ -306,7 +322,12 @@ footer{
     }
       
       
-.dropdown3:hover .dropbtn3 {background-color: #8a036b;}
+.dropdown3:hover .dropbtn3 {background-color: #8a036b;
+    #Arrowimg3{
+        transform:rotate(180deg);
+        transition: transform 0.3s ease-in-out;
+    }
+}
     
     
    
@@ -315,7 +336,12 @@ footer{
         color: white;
     }
 
-  .dropdown4:hover .dropbtn4 {background-color: #86044c;}
+  .dropdown4:hover .dropbtn4 {background-color: #86044c;
+    #Arrowimg4{
+        transform:rotate(180deg);
+        transition: transform 0.3s ease-in-out;
+    }
+}
 
 
 

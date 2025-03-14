@@ -24,13 +24,13 @@
     <div id="Banderoll">
         <img onclick="DMSBFDFM(1)" src="./img/Snöflinga - kopia.png" alt="Snöflinga">
         <p>Välkommen till skridskoshoppen</p>
-        <img onclick="ChangeArow(0)" src="./img/Snöflinga - kopia.png" alt="Snöflinga">
+        <img src="./img/Snöflinga - kopia.png" alt="Snöflinga">
     </div>
 
     <!-- Filter -->
      <div id="Filter">
         <div class="dropdown"> <!-- Drop down -->
-            <button onclick="ChangeArow(1)" type="button" id="btnid" class="dropbtn"> <img id="Storlek-icon" src="./img/Shoe size icon.webp" alt="Storlek Icon"> Storlek   <img id="Arrowimg1" src="./img/Arrow.webp" alt="Arrow"></button>
+            <button type="button" id="btnid" class="dropbtn"> <img id="Storlek-icon" src="./img/Shoe size icon.webp" alt="Storlek Icon"> Storlek   <img id="Arrowimg1" src="./img/Arrow.webp" alt="Arrow"></button>
             <div class="dropdown-content">
                 <fieldset>
                     <legend></legend>
@@ -53,7 +53,7 @@
         </div>
 
         <div class="dropdown2"> <!-- Drop down -->
-            <button onclick="ChangeArow(2)" type="button" id="btnid2" class="dropbtn2">   <img id="Variant-icon" src="./img/Konståknings_Skridsko icon.png" alt="Variant Icon">  Variant <img id="Arrowimg2" src="./img/Arrow.webp" alt="Arrow"></button>
+            <button type="button" id="btnid2" class="dropbtn2">   <img id="Variant-icon" src="./img/Konståknings_Skridsko icon.png" alt="Variant Icon">  Variant <img id="Arrowimg2" src="./img/Arrow.webp" alt="Arrow"></button>
             <div class="dropdown-content2">
                 <fieldset>
                     <legend></legend>
@@ -70,7 +70,7 @@
         </div>
 
         <div class="dropdown3"> <!-- Drop down -->
-            <button onclick="ChangeArow(3)" type="button" id="btnid3" class="dropbtn3">   <img id="Pris-icon" src="./img/Pris_Lap.png" alt="Pris Icon">  Pris   <img id="Arrowimg3" src="./img/Arrow.webp" alt="Arrow"></button>
+            <button  type="button" id="btnid3" class="dropbtn3">   <img id="Pris-icon" src="./img/Pris_Lap.png" alt="Pris Icon">  Pris   <img id="Arrowimg3" src="./img/Arrow.webp" alt="Arrow"></button>
             <div class="dropdown-content3">
                 <fieldset>
                     <legend></legend>
@@ -87,7 +87,7 @@
         </div>
 
         <div class="dropdown4"> <!-- Drop down -->
-            <button onclick="ChangeArow(4)" type="button" id="btnid4" class="dropbtn4">  <img id="Snörning-icon" src="./img/Shoe_Lace.png" alt="Snörning Icon">  Snörning  <img id="Arrowimg4" src="./img/Arrow.webp" alt="Arrow"></button>
+            <button  type="button" id="btnid4" class="dropbtn4">  <img id="Snörning-icon" src="./img/Shoe_Lace.png" alt="Snörning Icon">  Snörning  <img id="Arrowimg4" src="./img/Arrow.webp" alt="Arrow"></button>
             <div class="dropdown-content4">
                 <fieldset>
                     <legend></legend>
@@ -108,50 +108,50 @@
     <!-- Produkterna (Jag undrar om man kan göra om deta till ett obejekt och sedan skappa flera instanser?)-->
     <div id="Produkter">
         <article id="Produkt_1">
-            <img onclick="MerInfoProduckt()" class="skridskoimg" src="./img/konståknings_skridsko1.jpg" alt="Konståknings Skridsko">
+            <img onclick="MerInfoProduckt(1)" id="imgProduckt1" class="skridskoimg" src="./img/konståknings_skridsko1.jpg" alt="Konståknings Skridsko">
             <div class="Prducbes">
-                <p>Pris: 1320 kr</p>
-                <p>Beskrivning som inte skrivits</p>
+                <p id="productPris1" >Pris: 1320 kr</p>
+                <p id="productBeskrivning1" >Beskrivning som inte skrivits</p>
             </div>
             <button class="productVarukorgknapp" onclick="LäggTillVarukorg()" type="button"> <img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
         </article>
         <article id="Produkt_2">
-            <img class="skridskoimg" src="./img/Skridsko3.avif" alt="Konståknings Skridsko">
+            <img  onclick="MerInfoProduckt(2)" id="imgProduckt2" class="skridskoimg" src="./img/Skridsko3.avif" alt="Konståknings Skridsko">
             <div class="Prducbes">
-                <p>Pris: 1320 kr</p>
-                <p>Beskrivning som inte skrivits</p>
+                <p id="productPris2" >Pris: 1320 kr</p>
+                <p id="productBeskrivning2" >Beskrivning som inte skrivits</p>
             </div>
             <button class="productVarukorgknapp" onclick="LäggTillVarukorg()" type="button"> <img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
         </article>
         <article id="Produkt_3">
-            <img class="skridskoimg" src="./img/Kånståknings_skridsko2.webp" alt="Konståknings Skridsko">
+            <img  onclick="MerInfoProduckt(3)" id="imgProduckt3" class="skridskoimg" src="./img/Kånståknings_skridsko2.webp" alt="Konståknings Skridsko">
             <div class="Prducbes">
-                <p>Pris: 1320 kr</p>
-                <p>Beskrivning som inte skrivits</p>
+                <p id="productPris3" >Pris: 1320 kr</p>
+                <p id="productBeskrivning3" >Beskrivning som inte skrivits</p>
             </div>
             <button class="productVarukorgknapp" onclick="LäggTillVarukorg()" type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
         </article>
         <article id="Produkt_4">
-            <img class="skridskoimg" src="./img/LångfärdsSkridsko.webp" alt="Långfärds Skridsko">
+            <img  onclick="MerInfoProduckt(4)" id="imgProduckt4" class="skridskoimg" src="./img/LångfärdsSkridsko.webp" alt="Långfärds Skridsko">
             <div class="Prducbes">
-                <p>Pris: 1320 kr</p>
-                <p>Beskrivning som inte skrivits</p>
+                <p id="productPris4" >Pris: 1320 kr</p>
+                <p id="productBeskrivning4" >Beskrivning som inte skrivits</p>
             </div>
             <button class="productVarukorgknapp" onclick="LäggTillVarukorg()" type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
         </article>
         <article id="Produkt_5">
-            <img class="skridskoimg" src="./img/Skridsko1.jpg" alt="Hokey Skridsko">
+            <img  onclick="MerInfoProduckt(5)" id="imgProduckt5" class="skridskoimg" src="./img/Skridsko1.jpg" alt="Hokey Skridsko">
             <div class="Prducbes">
-                <p>Pris: 1320 kr</p>
-                <p>Beskrivning som inte skrivits</p>
+                <p  id="productPris5" >Pris: 1320 kr</p>
+                <p id="productBeskrivning5" >Beskrivning som inte skrivits</p>
             </div>
             <button class="productVarukorgknapp" onclick="LäggTillVarukorg()" type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
         </article>
         <article id="Produkt_6">
-            <img class="skridskoimg" src="./img/skridsko2.jpeg" alt="Hokey Skridsko">
+            <img  onclick="MerInfoProduckt(6)" id="imgProduckt6" class="skridskoimg" src="./img/skridsko2.jpeg" alt="Hokey Skridsko">
             <div class="Prducbes">
-                <p>Pris: 1320 kr</p>
-                <p>Beskrivning som inte skrivits</p>
+                <p id="productPris6" >Pris: 1320 kr</p>
+                <p id="productBeskrivning6" >Beskrivning som inte skrivits</p>
             </div>
             <button class="productVarukorgknapp" onclick="LäggTillVarukorg()" type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
         </article>
@@ -160,10 +160,10 @@
     <!-- Yterligare beskrivning av vald produkt -->
     <div id="Storbeskrivning">
         <article id="Produkt_stor">
-            <img src="./img/LångfärdsSkridsko.webp" alt="Långfärds Skridsko">
+            <img id="Stor_img" src="./img/LångfärdsSkridsko.webp" alt="Långfärds Skridsko">
             <div id="Beskrivning-text">
-                <p>Pris: 1320 kr</p>
-                <p>Beskrivning som inte skrivits</p>
+                <p id="Stor_productPris" >Pris: obestämt kr</p>
+                <p id="Stor_productBeskrivning" >Tom</p>
             </div>
         </article>
     </div>
