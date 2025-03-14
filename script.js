@@ -22,7 +22,6 @@ function LäggTillVarukorg(){
 
 
 
-
 function MerInfoProduckt(ImgID){
 
 let strimg = "#imgProduckt"+ImgID
