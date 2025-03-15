@@ -1,6 +1,6 @@
-
 document.addEventListener("DOMContentLoaded", function() {
-    NyProduckt()
+    let värde = NyProduckt()
+    NySumma(värde)
 })
 
 
@@ -19,6 +19,7 @@ function TillButik(page) {
 
 
 function NyProduckt(){
+    let Summa
 
     for (let index = 1; index < 7; index++) {
         const nyckel = index
@@ -26,11 +27,13 @@ function NyProduckt(){
         if (OParsadJson) {
             const ProducktInfo = JSON.parse(OParsadJson)
             CreateProduct(ProducktInfo)
+            Summa =+ ProducktInfo.Pris
         }
     }
 
 
 function CreateProduct(ProducktInfo){
+    
         
         let NewProductArt = document.createElement("article")
         let NewProductImg = document.createElement("img")
@@ -63,6 +66,7 @@ function CreateProduct(ProducktInfo){
 
     };
 
+    return Summa;
 }
 
 
@@ -75,4 +79,10 @@ function TömVarukorg(){
     article.forEach(function(article){
         article.parentNode.removeChild(article)
     })
+}
+
+
+function NySumma(SamanlagdaVärde) {
+    let PElement = document.querySelector("#Summa");
+    PElement.textContent("Summa "+SamanlagdaVärde,":-")
 }
