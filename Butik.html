@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="Butik.css">
+    <script defer src="./Butik.js"></script>
     <title>Web Projekt 2 Webbshop</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
         <div id="Buttons">
             <button onclick="ändraSpråk()"  id="button-språk"     type="button"> <img id="Språk-icon" src="./img/Laungade.png" alt="Språk icon"> Språk</button>     <!--Ändra språk med magic  -->
             <button onclick="AlertaIngenMeny()" id="button-meny"      type="button"> <img id="Meny-icon" src="./img/Meny icon.webp" alt="Meny Icon">  Meny</button>      <!--Knapp som kommer kunnas användas som en nav så man kan navigera sidan -->
-            <button onclick="TillVarukorgen()" id="button-varukorg"  type="button"> <img id="Varukorg-icon" src="./img/Varukorg.png" alt="Varukorg Icon">  Varukorg</button>  <!-- Ska länka till ny sida där saker lägs till i varukorgen
+            <button onclick="TillVarukorgen('Varukorg.html')" id="button-varukorg"  type="button"> <img id="Varukorg-icon" src="./img/Varukorg.png" alt="Varukorg Icon">  Varukorg</button>  <!-- Ska länka till ny sida där saker lägs till i varukorgen
                                                                                                                                                         Bild och suman ska kalkuleras, deta måste ligga i local storage -->
         </div>
     </header>
@@ -113,7 +113,7 @@
                 <p id="productPris1" >Pris: 1320 kr</p>
                 <p id="productBeskrivning1" >Beskrivning som inte skrivits</p>
             </div>
-            <button class="productVarukorgknapp" onclick="LäggTillVarukorg()" type="button"> <img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
+            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(1)" type="button"> <img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
         </article>
         <article id="Produkt_2">
             <img  onclick="MerInfoProduckt(2)" id="imgProduckt2" class="skridskoimg" src="./img/Skridsko3.avif" alt="Konståknings Skridsko">
@@ -121,7 +121,7 @@
                 <p id="productPris2" >Pris: 1320 kr</p>
                 <p id="productBeskrivning2" >Beskrivning som inte skrivits</p>
             </div>
-            <button class="productVarukorgknapp" onclick="LäggTillVarukorg()" type="button"> <img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
+            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(2)" type="button"> <img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
         </article>
         <article id="Produkt_3">
             <img  onclick="MerInfoProduckt(3)" id="imgProduckt3" class="skridskoimg" src="./img/Kånståknings_skridsko2.webp" alt="Konståknings Skridsko">
@@ -129,7 +129,7 @@
                 <p id="productPris3" >Pris: 1320 kr</p>
                 <p id="productBeskrivning3" >Beskrivning som inte skrivits</p>
             </div>
-            <button class="productVarukorgknapp" onclick="LäggTillVarukorg()" type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
+            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(3)" type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
         </article>
         <article id="Produkt_4">
             <img  onclick="MerInfoProduckt(4)" id="imgProduckt4" class="skridskoimg" src="./img/LångfärdsSkridsko.webp" alt="Långfärds Skridsko">
@@ -137,7 +137,7 @@
                 <p id="productPris4" >Pris: 1320 kr</p>
                 <p id="productBeskrivning4" >Beskrivning som inte skrivits</p>
             </div>
-            <button class="productVarukorgknapp" onclick="LäggTillVarukorg()" type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
+            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(4)" type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
         </article>
         <article id="Produkt_5">
             <img  onclick="MerInfoProduckt(5)" id="imgProduckt5" class="skridskoimg" src="./img/Skridsko1.jpg" alt="Hokey Skridsko">
@@ -145,7 +145,7 @@
                 <p  id="productPris5" >Pris: 1320 kr</p>
                 <p id="productBeskrivning5" >Beskrivning som inte skrivits</p>
             </div>
-            <button class="productVarukorgknapp" onclick="LäggTillVarukorg()" type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
+            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(5)" type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
         </article>
         <article id="Produkt_6">
             <img  onclick="MerInfoProduckt(6)" id="imgProduckt6" class="skridskoimg" src="./img/skridsko2.jpeg" alt="Hokey Skridsko">
@@ -153,7 +153,7 @@
                 <p id="productPris6" >Pris: 1320 kr</p>
                 <p id="productBeskrivning6" >Beskrivning som inte skrivits</p>
             </div>
-            <button class="productVarukorgknapp" onclick="LäggTillVarukorg()" type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
+            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(6)" type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
         </article>
     </div>
 
