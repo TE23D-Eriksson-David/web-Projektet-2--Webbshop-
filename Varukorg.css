@@ -2,7 +2,12 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 25vh auto 40vh;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    
+    .arvo-regular{
+        font-family: "Arvo", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
 }
 
 header{

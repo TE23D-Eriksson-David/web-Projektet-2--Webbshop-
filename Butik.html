@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Butik.css">
     <script defer src="./Butik.js"></script>
-    <title>Web Projekt 2 Webbshop</title>
+    <title>Web Projekt 2 Butik</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Huvudet med knappar till "Varukorg,Meny,Språk" -->
@@ -13,18 +17,18 @@
         <img src="./img/Skärmbild 2025-03-11 201801.webp" alt="Loga-skridsko shopen">
         <h1>Skridskoshopen</h1>
         <div id="Buttons">
-            <button onclick="ändraSpråk()"  id="button-språk"     type="button"> <img id="Språk-icon" src="./img/Laungade.png" alt="Språk icon"> Språk</button>     <!--Ändra språk med magic  -->
+            <button onclick="ändraSpråk()"  id="button-språk"     type="button"> <img id="Språk-icon" src="./img/Laungade.webp" alt="Språk icon"> Språk</button>     <!--Ändra språk med magic  -->
             <button onclick="AlertaIngenMeny()" id="button-meny"      type="button"> <img id="Meny-icon" src="./img/Meny icon.webp" alt="Meny Icon">  Meny</button>      <!--Knapp som kommer kunnas användas som en nav så man kan navigera sidan -->
-            <button onclick="TillVarukorgen('Varukorg.html')" id="button-varukorg"  type="button"> <img id="Varukorg-icon" src="./img/Varukorg.png" alt="Varukorg Icon">  Varukorg</button>  <!-- Ska länka till ny sida där saker lägs till i varukorgen
+            <button onclick="TillVarukorgen('Varukorg.html')" id="button-varukorg"  type="button"> <img id="Varukorg-icon" src="./img/Varukorg.webp" alt="Varukorg Icon">  Varukorg</button>  <!-- Ska länka till ny sida där saker lägs till i varukorgen
                                                                                                                                                         Bild och suman ska kalkuleras, deta måste ligga i local storage -->
         </div>
     </header>
 
     <!-- Banderoll -->
     <div id="Banderoll">
-        <img onclick="DMSBFDFM(1)" src="./img/Snöflinga - kopia.png" alt="Snöflinga">
+        <img onclick="DMSBFDFM(1)" src="./img/Snöflinga - kopia.webp" alt="Snöflinga">
         <p>Välkommen till skridskoshoppen</p>
-        <img src="./img/Snöflinga - kopia.png" alt="Snöflinga">
+        <img src="./img/Snöflinga - kopia.webp" alt="Snöflinga">
     </div>
 
     <!-- Filter -->
@@ -53,7 +57,7 @@
         </div>
 
         <div class="dropdown2"> <!-- Drop down -->
-            <button type="button" id="btnid2" class="dropbtn2">   <img id="Variant-icon" src="./img/Konståknings_Skridsko icon.png" alt="Variant Icon">  Variant <img id="Arrowimg2" src="./img/Arrow.webp" alt="Arrow"></button>
+            <button type="button" id="btnid2" class="dropbtn2">   <img id="Variant-icon" src="./img/Konståknings_Skridsko icon.webp" alt="Variant Icon">  Variant <img id="Arrowimg2" src="./img/Arrow.webp" alt="Arrow"></button>
             <div class="dropdown-content2">
                 <fieldset>
                     <legend></legend>
@@ -70,7 +74,7 @@
         </div>
 
         <div class="dropdown3"> <!-- Drop down -->
-            <button  type="button" id="btnid3" class="dropbtn3">   <img id="Pris-icon" src="./img/Pris_Lap.png" alt="Pris Icon">  Pris   <img id="Arrowimg3" src="./img/Arrow.webp" alt="Arrow"></button>
+            <button  type="button" id="btnid3" class="dropbtn3">   <img id="Pris-icon" src="./img/Pris_Lap.webp" alt="Pris Icon">  Pris   <img id="Arrowimg3" src="./img/Arrow.webp" alt="Arrow"></button>
             <div class="dropdown-content3">
                 <fieldset>
                     <legend></legend>
@@ -87,7 +91,7 @@
         </div>
 
         <div class="dropdown4"> <!-- Drop down -->
-            <button  type="button" id="btnid4" class="dropbtn4">  <img id="Snörning-icon" src="./img/Shoe_Lace.png" alt="Snörning Icon">  Snörning  <img id="Arrowimg4" src="./img/Arrow.webp" alt="Arrow"></button>
+            <button  type="button" id="btnid4" class="dropbtn4">  <img id="Snörning-icon" src="./img/Shoe_Lace.webp" alt="Snörning Icon">  Snörning  <img id="Arrowimg4" src="./img/Arrow.webp" alt="Arrow"></button>
             <div class="dropdown-content4">
                 <fieldset>
                     <legend></legend>
@@ -108,52 +112,52 @@
     <!-- Produkterna (Jag undrar om man kan göra om deta till ett obejekt och sedan skappa flera instanser?)-->
     <div id="Produkter">
         <article id="Produkt_1">
-            <img onclick="MerInfoProduckt(1)" id="imgProduckt1" class="skridskoimg" src="./img/konståknings_skridsko1.jpg" alt="Konståknings Skridsko">
+            <img onclick="MerInfoProduckt(1)" id="imgProduckt1" class="skridskoimg" src="./img/konståknings_skridsko1.webp" alt="Konståknings Skridsko">
             <div class="Prducbes">
-                <p id="productPris1" data-pris="1321" >Pris: 1321 kr</p>
-                <p id="productBeskrivning1" >Beskrivning som inte skrivits 1</p>
+                <p  class="arvo-regular" id="productPris1" data-pris="1321" >Pris: 1321 kr</p>
+                <p  class="arvo-regular" id="productBeskrivning1" >Beskrivning som inte skrivits 1</p>
             </div>
-            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(1)" type="button"> <img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
+            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(1)" type="button"> <img class="Varukorgimg" src="./img/Varukorg.webp" alt="Varukorg knapp"></button>
         </article>
         <article id="Produkt_2">
-            <img  onclick="MerInfoProduckt(2)" id="imgProduckt2" class="skridskoimg" src="./img/Skridsko3.avif" alt="Konståknings Skridsko">
+            <img  onclick="MerInfoProduckt(2)" id="imgProduckt2" class="skridskoimg" src="./img/Skridsko3.webp" alt="Konståknings Skridsko">
             <div class="Prducbes">
-                <p id="productPris2" data-pris="1322" >Pris: 1322 kr</p>
-                <p id="productBeskrivning2" >Beskrivning som inte skrivits 2</p>
+                <p class="arvo-regular" id="productPris2" data-pris="1322" >Pris: 1322 kr</p>
+                <p class="arvo-regular" id="productBeskrivning2" >Beskrivning som inte skrivits 2</p>
             </div>
-            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(2)" type="button"> <img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
+            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(2)" type="button"> <img class="Varukorgimg" src="./img/Varukorg.webp" alt="Varukorg knapp"></button>
         </article>
         <article id="Produkt_3">
             <img  onclick="MerInfoProduckt(3)" id="imgProduckt3" class="skridskoimg" src="./img/Kånståknings_skridsko2.webp" alt="Konståknings Skridsko">
             <div class="Prducbes">
-                <p id="productPris3" data-pris="1323" >Pris: 1323 kr</p>
-                <p id="productBeskrivning3" >Beskrivning som inte skrivits 3</p>
+                <p class="arvo-regular" id="productPris3" data-pris="1323" >Pris: 1323 kr</p>
+                <p class="arvo-regular" id="productBeskrivning3" >Beskrivning som inte skrivits 3</p>
             </div>
-            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(3)" type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
+            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(3)" type="button"><img class="Varukorgimg" src="./img/Varukorg.webp" alt="Varukorg knapp"></button>
         </article>
         <article id="Produkt_4">
             <img  onclick="MerInfoProduckt(4)" id="imgProduckt4" class="skridskoimg" src="./img/LångfärdsSkridsko.webp" alt="Långfärds Skridsko">
             <div class="Prducbes">
-                <p id="productPris4" data-pris="1324" >Pris: 1324 kr</p>
-                <p id="productBeskrivning4" >Beskrivning som inte skrivits 4</p>
+                <p class="arvo-regular" id="productPris4" data-pris="1324" >Pris: 1324 kr</p>
+                <p class="arvo-regular" id="productBeskrivning4" >Beskrivning som inte skrivits 4</p>
             </div>
-            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(4)" type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
+            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(4)" type="button"><img class="Varukorgimg" src="./img/Varukorg.webp" alt="Varukorg knapp"></button>
         </article>
         <article id="Produkt_5">
-            <img  onclick="MerInfoProduckt(5)" id="imgProduckt5" class="skridskoimg" src="./img/Skridsko1.jpg" alt="Hokey Skridsko">
+            <img  onclick="MerInfoProduckt(5)" id="imgProduckt5" class="skridskoimg" src="./img/Skridsko1.webp" alt="Hokey Skridsko">
             <div class="Prducbes">
-                <p  id="productPris5" data-pris="1325" >Pris: 1325 kr</p>
-                <p id="productBeskrivning5" >Beskrivning som inte skrivits 6</p>
+                <p class="arvo-regular" id="productPris5" data-pris="1325" >Pris: 1325 kr</p>
+                <p class="arvo-regular" id="productBeskrivning5" >Beskrivning som inte skrivits 6</p>
             </div>
-            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(5)" type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
+            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(5)" type="button"><img class="Varukorgimg" src="./img/Varukorg.webp" alt="Varukorg knapp"></button>
         </article>
         <article id="Produkt_6">
-            <img  onclick="MerInfoProduckt(6)" id="imgProduckt6" class="skridskoimg" src="./img/skridsko2.jpeg" alt="Hokey Skridsko">
+            <img  onclick="MerInfoProduckt(6)" id="imgProduckt6" class="skridskoimg" src="./img/skridsko2.webp" alt="Hokey Skridsko">
             <div class="Prducbes">
-                <p id="productPris6" data-pris="1326" >Pris: 1326 kr</p>
-                <p id="productBeskrivning6" >Beskrivning som inte skrivits 6</p>
+                <p class="arvo-regular" id="productPris6" data-pris="1326" >Pris: 1326 kr</p>
+                <p class="arvo-regular" id="productBeskrivning6" >Beskrivning som inte skrivits 6</p>
             </div>
-            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(6)" type="button"><img class="Varukorgimg" src="./img/Varukorg.png" alt="Varukorg.png"></button>
+            <button class="productVarukorgknapp" onclick="LäggTillVarukorg(6)" type="button"><img class="Varukorgimg" src="./img/Varukorg.webp" alt="Varukorg knapp"></button>
         </article>
     </div>
 
@@ -162,8 +166,8 @@
         <article id="Produkt_stor">
             <img id="Stor_img" src="./img/LångfärdsSkridsko.webp" alt="Långfärds Skridsko">
             <div id="Beskrivning-text">
-                <p id="Stor_productPris" >Pris: obestämt kr</p>
-                <p id="Stor_productBeskrivning" >Tom</p>
+                <p class="arvo-regular" id="Stor_productPris" >Pris: obestämt kr</p>
+                <p class="arvo-regular" id="Stor_productBeskrivning" >Tom</p>
             </div>
         </article>
     </div>
@@ -171,9 +175,9 @@
     <!-- Foten, länkar och yterligare laglig information -->
     <footer>
             <ul>
-                <li><a href="https://www.systembolaget.se/">Länk till systembolaget</a></li>
-                <li><a href="https://www.ikea.com/se/sv/shoppingcart/">Länk till Ikea</a></li>
-                <li><a href="https://www.coop.se/foretag/">Länk till Coop</a></li>
+                <li><a class="arvo-regular" href="https://www.systembolaget.se/">Länk till systembolaget</a></li>
+                <li><a class="arvo-regular" href="https://www.ikea.com/se/sv/shoppingcart/">Länk till Ikea</a></li>
+                <li><a class="arvo-regular" href="https://www.coop.se/foretag/">Länk till Coop</a></li>
             </ul>
     </footer>
 

@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Varukorg.css">
     <script defer src="./Varukorg.js"></script>
-    <title>Document</title>
+    <title>Varukorg</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -13,32 +17,24 @@
         <img src="./img/Skärmbild 2025-03-11 201801.webp" alt="Loga-skridsko shopen">
         <h1>Skridskoshopen</h1>
         <div id="Buttons">
-            <button onclick="ändraSpråk()"  id="button-språk"     type="button"> <img id="Språk-icon" src="./img/Laungade.png" alt="Språk icon"> Språk</button>     <!--Ändra språk med magic  -->
+            <button onclick="ändraSpråk()"  id="button-språk"     type="button"> <img id="Språk-icon" src="./img/Laungade.webp" alt="Språk icon"> Språk</button>     <!--Ändra språk med magic  -->
             <button onclick="AlertaIngenMeny()" id="button-meny"      type="button"> <img id="Meny-icon" src="./img/Meny icon.webp" alt="Meny Icon">  Meny</button>      <!--Knapp som kommer kunnas användas som en nav så man kan navigera sidan -->
-            <button onclick="TillButik('Butik.html')" id="button-varukorg"  type="button"> <img id="Varukorg-icon" src="./img/shop-icon.jpg" alt="Varukorg Icon">  Butik</button>  <!-- Ska länka till ny sida där saker lägs till i varukorgen
+            <button onclick="TillButik('Butik.html')" id="button-varukorg"  type="button"> <img id="Varukorg-icon" src="./img/shop-icon.webp" alt="Varukorg Icon">  Butik</button>  <!-- Ska länka till ny sida där saker lägs till i varukorgen
                                                                                                                                                          Bild och suman ska kalkuleras, deta måste ligga i local storage -->
         </div>
     </header>
 
-    <div id="VarorCon">
-        <!-- <p class="Ptom">Tom</p> -->
-        <!-- <article class="Allclass">
-            <img  id="imgProduckt1" class="Classimg" src="./img/PlaceholderImg.jpg" alt="Konståknings Skridsko">
-            <div class="Prducbes">
-                <p id="productPris1" >Pris: obestämd kr</p>
-                <p id="productBeskrivning1" >Beskrivning</p>
-            </div>
-            <button class="productVarukorgknapp"  type="button"> <img class="Varukorgimg" src="./img/Kryss.png" alt="Bortagnigs kryss"></button>
-        </article> -->
-    </div>
+
+     <div id="VarorCon"></div> <!-- produkter div -->
+
 
     <footer>
         <p id="Summa">Totalt 0 </p>
-        <div id="Utchekningsknappar">
-            <button  onclick="Betalning()" class="Varukorgknapp"   id="Betallningsknapp" type="button"> <img class="UtchekningsImg" src="./img/Pay symbol.webp" alt="Betalnings-symbol">Betala</button>
-            <button onclick="TömVarukorg()" class="Varukorgknapp" id="Tömninsknapp" type="button"> <img  class="UtchekningsImg"   src="./img/Soptun.jpg" alt="Tömnings-symbol">Töm</button>
-        </div>
-       </footer>
+            <div id="Utchekningsknappar">
+                <button  onclick="Betalning()" class="Varukorgknapp"   id="Betallningsknapp" type="button"> <img class="UtchekningsImg" src="./img/Pay symbol.webp" alt="Betalnings-symbol">Betala</button>
+                <button onclick="TömVarukorg()" class="Varukorgknapp" id="Tömninsknapp" type="button"> <img  class="UtchekningsImg"   src="./img/Soptun.webp" alt="Tömnings-symbol">Töm</button>
+            </div>
+    </footer>
 
 </body>
 </html>

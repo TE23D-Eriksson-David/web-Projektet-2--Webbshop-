@@ -54,9 +54,11 @@ function CreateProduct(ProducktInfo,Sifra){
         NewProductImg.setAttribute("alt", ProducktInfo.BildAlt)
         NewPris.textContent = ProducktInfo.PrisText
         NewBeskrivning.textContent = ProducktInfo.Beskrivning
-        NewButtonImg.setAttribute("src", "./img/Kryss.png")
+        NewButtonImg.setAttribute("src", "./img/Kryss.webp")
         NewButtonImg.setAttribute("alt", "Bortagnigs kryss")
 
+        NewBeskrivning.classList.add("arvo-regular")
+        NewPris.classList.add("arvo-regular")
         NewProductArt.classList.add("Allclass")
         NewProductImg.classList.add("Classimg")
         NewDiv.classList.add("Prducbes")
@@ -114,7 +116,7 @@ function TömVarukorg(){
 
 function NySumma(SamanlagdaVärde) {
     let PElement = document.querySelector("#Summa");
-    PElement.textContent = "Totalt "+SamanlagdaVärde,":-"
+    PElement.textContent = "Totalt "+SamanlagdaVärde+" kr"
 }
 
 function OmTom(){
