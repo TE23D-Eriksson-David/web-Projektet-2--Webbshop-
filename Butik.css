@@ -111,6 +111,38 @@ img{
     height: 10vh;
 }
 
+
+
+.dropdown:hover .dropbtn {background-color: #600592;
+    #Arrowimg1{
+        transform:rotate(180deg);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+  
+
+.dropdown2:hover .dropbtn2 {background-color: #800da0;
+    #Arrowimg2{
+        transform:rotate(180deg);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+      
+      
+.dropdown3:hover .dropbtn3 {background-color: #9a0577;
+    #Arrowimg3{
+        transform:rotate(180deg);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+.dropdown4:hover .dropbtn4 {background-color: #960554;
+    #Arrowimg4{
+        transform:rotate(180deg);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
 }
 
 
@@ -168,6 +200,8 @@ img{
             }
 
         }
+
+        .productVarukorgknapp:hover {background-color: darkgreen;}
 
         .Prducbes{
             background-color: gainsboro;
@@ -293,55 +327,23 @@ footer{
    {display: block;}
 
 
-  
-.dropdown:hover .dropbtn {background-color: #610393;
-    #Arrowimg1{
-        transform:rotate(180deg);
-        transition: transform 0.3s ease-in-out;
-    }
-}
 
 
 .dropdown input[type="radio"]:checked + label {
     background-color: #7004aa; 
     color: white;
 }
-  
-
-.dropdown2:hover .dropbtn2 {background-color: #7a0e98;
-    #Arrowimg2{
-        transform:rotate(180deg);
-        transition: transform 0.3s ease-in-out;
-    }
-}
-    
 
 .dropdown2 input[type="radio"]:checked + label {
-        background-color: #961ab8; 
-        color: white;
-    }
-      
-      
-.dropdown3:hover .dropbtn3 {background-color: #8a036b;
-    #Arrowimg3{
-        transform:rotate(180deg);
-        transition: transform 0.3s ease-in-out;
-    }
-}
-    
+    background-color: #961ab8; 
+    color: white;
+}   
     
    
 .dropdown3 input[type="radio"]:checked + label {
         background-color: #aa0483; 
         color: white;
     }
-
-  .dropdown4:hover .dropbtn4 {background-color: #86044c;
-    #Arrowimg4{
-        transform:rotate(180deg);
-        transition: transform 0.3s ease-in-out;
-    }
-}
 
 
 

@@ -1,6 +1,10 @@
+let Summa = 0
+
+
 document.addEventListener("DOMContentLoaded", function() {
     let värde = NyProduckt()
     NySumma(värde)
+    OmTom()
 })
 
 
@@ -19,21 +23,24 @@ function TillButik(page) {
 
 
 function NyProduckt(){
-    let Summa
+    
 
     for (let index = 1; index < 7; index++) {
         const nyckel = index
         let OParsadJson = window.localStorage.getItem(nyckel)
         if (OParsadJson) {
-            const ProducktInfo = JSON.parse(OParsadJson)
-            CreateProduct(ProducktInfo)
-            Summa =+ ProducktInfo.Pris
+            let ProducktInfo = JSON.parse(OParsadJson)
+            console.log(ProducktInfo)
+            console.log(ProducktInfo.NumPris)
+            CreateProduct(ProducktInfo,nyckel)
+            Summa += Number(ProducktInfo.NumPris) 
         }
     }
 
 
-function CreateProduct(ProducktInfo){
-    
+function CreateProduct(ProducktInfo,Sifra){
+
+        let VarorCon = document.querySelector("#VarorCon")
         
         let NewProductArt = document.createElement("article")
         let NewProductImg = document.createElement("img")
@@ -42,11 +49,10 @@ function CreateProduct(ProducktInfo){
         let NewBeskrivning = document.createElement("p")
         let NewButton = document.createElement("button")
         let NewButtonImg = document.createElement("img")
-
         
         NewProductImg.setAttribute("src", ProducktInfo.BildSrc)
         NewProductImg.setAttribute("alt", ProducktInfo.BildAlt)
-        NewPris.textContent = ProducktInfo.Pris
+        NewPris.textContent = ProducktInfo.PrisText
         NewBeskrivning.textContent = ProducktInfo.Beskrivning
         NewButtonImg.setAttribute("src", "./img/Kryss.png")
         NewButtonImg.setAttribute("alt", "Bortagnigs kryss")
@@ -56,13 +62,27 @@ function CreateProduct(ProducktInfo){
         NewDiv.classList.add("Prducbes")
         NewButton.classList.add("productVarukorgknapp")
         NewButtonImg.classList.add("Varukorgimg")
-    
+
+
+        let holder = "NewProductArt" + Sifra    //Sifra kommer från en for loop
+        NewProductArt.id = holder
+
+        NewButton.onclick = function() {
+            let ToRemove = document.querySelector("#"+holder) 
+            VarorCon.removeChild(ToRemove)
+            localStorage.removeItem(Sifra)
+            Summa -= Number(ProducktInfo.NumPris)
+            NySumma(Summa)
+            OmTom()
+        }
+
         NewProductArt.appendChild(NewProductImg)
         NewProductArt.appendChild(NewDiv)
         NewDiv.appendChild(NewPris)
         NewDiv.appendChild(NewBeskrivning)
         NewButton.appendChild(NewButtonImg)
         NewProductArt.appendChild(NewButton)
+        VarorCon.appendChild(NewProductArt)
 
     };
 
@@ -79,10 +99,34 @@ function TömVarukorg(){
     article.forEach(function(article){
         article.parentNode.removeChild(article)
     })
+    let pchek = document.querySelector(".Ptom")
+    if (!pchek) {
+    let VarorCon = document.querySelector("#VarorCon")
+    let NewPTom = document.createElement("p")
+    NewPTom.textContent = "Tom"
+    NewPTom.classList.add("Ptom")
+    VarorCon.appendChild(NewPTom)
+    localStorage.clear()
+    }
+    NySumma(0)
 }
 
 
 function NySumma(SamanlagdaVärde) {
     let PElement = document.querySelector("#Summa");
-    PElement.textContent("Summa "+SamanlagdaVärde,":-")
+    PElement.textContent = "Totalt "+SamanlagdaVärde,":-"
+}
+
+function OmTom(){
+    let Ptom = document.querySelector(".PTom")
+    let VarorCon = document.querySelector("#VarorCon")
+    let articles = document.querySelectorAll("article")
+    if (articles.length > 0) {
+        VarorCon.parentNode.removeChild(Ptom)
+    } else {
+        let NewPTom = document.createElement("p")
+        NewPTom.textContent = "Tom"
+        NewPTom.classList.add("Ptom")
+        VarorCon.appendChild(NewPTom)
+    }
 }

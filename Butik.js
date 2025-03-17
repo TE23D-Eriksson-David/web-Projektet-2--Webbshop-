@@ -16,18 +16,21 @@ function LäggTillVarukorg(ProduktId){
         let taking_src_elementet = document.querySelector(strimg)
         let taking_alt_elementet = document.querySelector(strimg)
 
+        const newScr = taking_src_elementet.getAttribute("src");
+        const newAlt = taking_alt_elementet.getAttribute("alt");
+        
     let strPris = "#productPris"+ProduktId
         let ProductPris = document.querySelector(strPris)
 
     let strPbes = "#productBeskrivning"+ProduktId
         let ProductBes = document.querySelector(strPbes)
-        
 
     let ProducktInfo={
-        Pris: ProductPris,
-        Beskrivning: ProductBes,
-        BildAlt: taking_alt_elementet,
-        BildSrc: taking_src_elementet
+        PrisText: ProductPris.textContent,
+        Beskrivning: ProductBes.textContent,
+        BildAlt: newAlt,
+        BildSrc: newScr,
+        NumPris: ProductPris.dataset.pris,
     }
 
     const Json_ProducktInfo = JSON.stringify(ProducktInfo)
