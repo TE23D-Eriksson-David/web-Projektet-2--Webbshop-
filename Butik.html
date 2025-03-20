@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="Butik.css">
     <script defer src="./Butik.js"></script>
     <title>Web Projekt 2 Butik</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Huvudet med knappar till "Varukorg,Meny,Språk" -->
     <header>
         <img src="./img/Skärmbild 2025-03-11 201801.webp" alt="Loga-skridsko shopen">
-        <h1>Skridskoshopen</h1>
+        <div id="P-align">
+            <h1>Skridskoshopen</h1>
+        </div>
         <div id="Buttons">
             <button onclick="ändraSpråk()"  id="button-språk"     type="button"> <img id="Språk-icon" src="./img/Laungade.webp" alt="Språk icon"> Språk</button>     <!--Ändra språk med magic  -->
             <button onclick="AlertaIngenMeny()" id="button-meny"      type="button"> <img id="Meny-icon" src="./img/Meny icon.webp" alt="Meny Icon">  Meny</button>      <!--Knapp som kommer kunnas användas som en nav så man kan navigera sidan -->
@@ -147,7 +150,7 @@
             <img  onclick="MerInfoProduckt(5)" id="imgProduckt5" class="skridskoimg" src="./img/Skridsko1.webp" alt="Hokey Skridsko">
             <div class="Prducbes">
                 <p class="arvo-regular" id="productPris5" data-pris="1325" >Pris: 1325 kr</p>
-                <p class="arvo-regular" id="productBeskrivning5" >Beskrivning som inte skrivits 6</p>
+                <p class="arvo-regular" id="productBeskrivning5" >Beskrivning som inte skrivits 5</p>
             </div>
             <button class="productVarukorgknapp" onclick="LäggTillVarukorg(5)" type="button"><img class="Varukorgimg" src="./img/Varukorg.webp" alt="Varukorg knapp"></button>
         </article>

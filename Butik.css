@@ -1,388 +1,1264 @@
-body{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 25vh 60vh 115vh auto auto 30vh;
 
-    .arvo-regular {
-        font-family: "Arvo", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 60vh 90vh auto auto 30vh;
 
-}
+        .arvo-regular {
+            font-family: "Arvo", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
 
-
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #4e7cc5;
-
-    #Buttons{
-    display: flex;
-    justify-content:space-around;
-    }
-    button{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    img{
-        width: auto;
-        height: auto;
-    }
-    #Meny-icon, #Varukorg-icon, #Språk-icon{
-        width: 10vw;
-        height: 15vh;
     }
 
 
-    #button-språk, #button-varukorg, #button-meny{
-        background-color: #74a0e7;
-        color: white;
-        text-shadow: 2px 2px 4px #000000;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        width: 15vw;
-        font-size: x-large ;
-    }
-
-    #Buttons button:hover {background-color: #6594d9;}
-   
-    h1{
-        color: white;
-        text-shadow: 2px 2px 4px #000000;
-        height:min-content;
-        font-size: 380%;
-        margin: 0;
-        margin-top: 7vh;
-    }
-}
-
-#Banderoll{
-    display: flex;
-    flex-direction: row;
-    font-size: 4.5vw;
-    justify-content: center;
-    background-color: #ddd;
-    align-items: center;
-    color: white;
-    background-image: url(./img/Banderool-bild.webp);
-    background-size:cover;
-    background-position: center;
-
-    img{
-        width: 20vw;
-        height: 40vh;
-    }
-
-    p{
-        font-size:4.2vw;
-        text-shadow: 2px 2px 4px #000000; 
-    }
-}
-
-#Filter{
-    display: flex;
-    flex-direction: column;
-    background-color: #4e7cc5; 
-
-    button{
+    header{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-        font-size:4.2vw;
-        text-shadow: 2px 2px 4px #000000; 
-    }
+        background-color: #4e7cc5;
 
-    .rotate{
-        transform:rotate(90deg);
-        transition: transform 0.3s ease-in-out;
-    }
-
-#Arrowimg1,#Arrowimg2,#Arrowimg3,#Arrowimg4{
-width: 5vw;
-height: 10vh;
-rotate: 90deg;
-transition: transform 0.3s ease-out;
-}
-
-img{
-    width: 10vw;
-    height: 10vh;
-}
-
-
-
-.dropdown:hover .dropbtn {background-color: #600592;
-    #Arrowimg1{
-        transform:rotate(180deg);
-        transition: transform 0.3s ease-in-out;
-    }
-}
-  
-
-.dropdown2:hover .dropbtn2 {background-color: #800da0;
-    #Arrowimg2{
-        transform:rotate(180deg);
-        transition: transform 0.3s ease-in-out;
-    }
-}
-      
-      
-.dropdown3:hover .dropbtn3 {background-color: #9a0577;
-    #Arrowimg3{
-        transform:rotate(180deg);
-        transition: transform 0.3s ease-in-out;
-    }
-}
-
-.dropdown4:hover .dropbtn4 {background-color: #960554;
-    #Arrowimg4{
-        transform:rotate(180deg);
-        transition: transform 0.3s ease-in-out;
-    }
-}
-
-}
-
-
-
-
-
-#Produkter{
-    display:grid;
-    grid-template-columns:1fr;
-    grid-template-rows:repeat(6, 60vh);
-    gap: 2vw;
-    background-color: #4e7cc5;
-
-    article{
+        #Buttons{
         display: flex;
-        flex-direction: row;
-        background-color: #f1f1f1;
-        justify-content:space-between;
-        border: 1vw, solid, #4e7cc5;
-
-        .skridskoimg{
-            margin-left: 2.5vw;
-            border: 1vw,solid,#484444;
+        justify-content:space-around;
+        }
+        button{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: auto;
         }
 
         img{
-            width: 25vw;
+            width: 18vw;
+            height: auto;
+        }
+        #Meny-icon, #Varukorg-icon, #Språk-icon{
+            width: 10vw;
+            height: 15vh;
         }
 
-        .productVarukorgknapp{
-            background-color: green;
+
+        #button-språk, #button-varukorg, #button-meny{
+            background-color: #74a0e7;
             color: white;
             text-shadow: 2px 2px 4px #000000;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
-            font-size: 16px;
-            width: 25vw;
-            padding: 0;
-            padding-top: 20vh;
-            padding-bottom: 20vh;
-            padding-left: 1vw;
-            padding-right: 1vw;
+            padding: 2.8vw;
+            font-size:calc(0.25rem + 2vw);
             border: none;
-            font-size: x-large ;
-            border-radius: 15%;
-            margin-right: 2.5vw;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            .Varukorgimg{
-                height: auto;
-                width: 25vw;
-                padding: 0;
-            }
-
+            width: 15vw;
         }
 
-        .productVarukorgknapp:hover {background-color: darkgreen;}
+        #Buttons button:hover {background-color: #6594d9;}
 
-        .Prducbes{
-            background-color: gainsboro;
+        #P-align{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
-            margin-top: 10vh;
-            margin-bottom: 10vh;
-            width: 30vw;
-            border-radius: 2.5rem;
+        }
+    
+        h1{
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            height:min-content;
+            font-size:calc(0.25rem + 4.5vw);
+            margin: 0; 
         }
     }
-}
 
-
-#Storbeskrivning{
-    background-color: #595b5e;
-
-#Produkt_stor{
-    display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows:auto auto;
-
-    
-    img{
-        padding-top: 10vh;
-        margin-left: 9vw;
-        margin-right: 9vw;
-        height:auto;
-        width:80vw;
-    }
-
-    #Beskrivning-text{
-        margin-left: 9vw;
-        margin-right: 9vw;
-        padding-left: 2vw;
-        background-color: gray;
-    }
-}
-
-}
-
-
-footer{
-    background-color: rgb(20, 19, 19);
-    color: white;
-    align-content: center;
-    ul{
+    #Banderoll{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        
-        li{
-            a{
-                color: white;
-            }
-            
-            
+        justify-content: center;
+        background-color: #ddd;
+        align-items: center;
+        color: white;
+        background-image: url(./img/Banderool-bild.webp);
+        background-size:cover;
+        background-position: center;
+
+        img{
+            width: 20vw;
+            max-height: 40vh;
+        }
+
+        p{
+            text-align: center;
+            font-size:calc(1.1rem + 2vw);
+            text-shadow: 2px 2px 4px #000000; 
         }
     }
-}
+
+    #Filter{
+        display: flex;
+        flex-direction: column;
+        background-color: #4e7cc5; 
+        align-items: center;
+
+        button{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-size:calc(0.5rem + 7vw);
+            text-shadow: 2px 2px 4px #000000; 
+        }
+
+        .rotate{
+            transform:rotate(90deg);
+            transition: transform 0.3s ease-in-out;
+        }
+
+    #Arrowimg1,#Arrowimg2,#Arrowimg3,#Arrowimg4{
+    width: 5vw;
+    height: 10vh;
+    rotate: 90deg;
+    transition: transform 0.3s ease-out;
+    }
+
+    img{
+        width: 10vw;
+        height: 10vh;
+    }
 
 
 
-
-
-#btnid{  /* Färger för Button */
-    margin-top: 5vh;
-    background-color: #7004aa;
-}
-#btnid2{
-    background-color: #961ab8;
-}
-#btnid3{
-    background-color: #aa0483;
-}
-#btnid4{
-    background-color: #aa045f;
-}
-
-
- /* Stillen för knappen */
-.dropbtn, .dropbtn2, .dropbtn3, .dropbtn4 {
-    margin-left: 1.5vw;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset; 
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    width: 95vw;
-    height: 20vh;
-  }
-
-  
-
-  /* Dropp down knapparnas still */
-.dropdown-content, .dropdown-content2, .dropdown-content3, .dropdown-content4 {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    margin-left: 1.5vw;
-}
-
-
-  
-  /* Texten */
-.dropdown-content label, .dropdown-content2 label, .dropdown-content3 label, .dropdown-content3 label, .dropdown-content4 label {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
- 
-.dropdown-content label:hover, .dropdown-content2 label:hover, .dropdown-content3 label:hover, .dropdown-content4 label:hover 
-  {background-color: #ddd;}
-  /* Effekter & Visa individuela filter */
-.dropdown:hover .dropdown-content, .dropdown2:hover .dropdown-content2, .dropdown3:hover .dropdown-content3,.dropdown4:hover .dropdown-content4
-   {display: block;}
-
-
-
-
-.dropdown input[type="radio"]:checked + label {
-    background-color: #7004aa; 
-    color: white;
-}
-
-.dropdown2 input[type="radio"]:checked + label {
-    background-color: #961ab8; 
-    color: white;
-}   
+    .dropdown:hover .dropbtn {background-color: #600592;
+        #Arrowimg1{
+            transform:rotate(180deg);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
     
-   
-.dropdown3 input[type="radio"]:checked + label {
-        background-color: #aa0483; 
+
+    .dropdown2:hover .dropbtn2 {background-color: #800da0;
+        #Arrowimg2{
+            transform:rotate(180deg);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+        
+        
+    .dropdown3:hover .dropbtn3 {background-color: #9a0577;
+        #Arrowimg3{
+            transform:rotate(180deg);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+
+    .dropdown4:hover .dropbtn4 {background-color: #960554;
+        #Arrowimg4{
+            transform:rotate(180deg);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+
+    }
+
+
+
+    #Produkter{
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:repeat(6, 60vh);
+        gap: 2vw;
+        background-color: #4e7cc5;
+
+        article{
+            display: flex;
+            flex-direction: row;
+            background-color: #f1f1f1;
+            justify-content:space-between;
+            border: 1vw, solid, #4e7cc5;
+
+            .skridskoimg{
+                margin-left: 2.5vw;
+                border: 1vw,solid,#484444;
+                margin-top: 2.5vh;
+                margin-bottom: 2.5vh;
+            }
+
+            img{
+                width: 25vw;
+            }
+
+            .productVarukorgknapp{
+                background-color: green;
+                color: white;
+                text-shadow: 2px 2px 4px #000000;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+                width: 25vw;
+                padding: 0;
+                padding-top: 20vh;
+                padding-bottom: 20vh;
+                padding-left: 1vw;
+                padding-right: 1vw;
+                border: none;
+                border-radius: 15%;
+                margin-right: 2.5vw;
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .Varukorgimg{
+                    height: auto;
+                    width: 25vw;
+                    padding: 0;
+                }
+
+            }
+
+            .productVarukorgknapp:hover {background-color: darkgreen;}
+
+            .Prducbes{
+                background-color: gainsboro;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+                width: 30vw;
+                border-radius: 2.5rem;
+                font-size:calc(0.5rem + 2vw);
+                p{
+                    margin: 2vw;
+                }
+            }
+        }
+    }
+
+
+    #Storbeskrivning{
+        background-color: #595b5e;
+
+    #Produkt_stor{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+
+        
+        img{
+            margin-top: 10vh;
+            margin-left: 9vw;
+            margin-right: 9vw;
+            height:auto;
+            width:80vw;
+            border: 1vw,solid,#484444;
+        }
+
+        #Beskrivning-text{
+            margin-left: 9vw;
+            margin-right: 9vw;
+            padding-left: 2vw;
+            background-color: gray;
+            font-size:calc(1rem + 2vw);
+            border: 1vw,solid,#484444;
+        }
+    }
+
+    }
+
+
+    footer{
+        background-color: rgb(20, 19, 19);
+        color: white;
+        align-content: center;
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            
+            li{
+                a{
+                    color: white;
+                    font-size:calc(0.005rem + 2.5vw);
+                }
+                
+            }
+        }
+    }
+
+
+
+
+    #btnid{  /* Färger för Button */
+        margin-top: 5vh;
+        background-color: #7004aa;
+    }
+    #btnid2{
+        background-color: #961ab8;
+    }
+    #btnid3{
+        background-color: #aa0483;
+    }
+    #btnid4{
+        background-color: #aa045f;
+    }
+
+
+    /* Stillen för knappen */
+    .dropbtn, .dropbtn2, .dropbtn3, .dropbtn4 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset; 
+        color: white;
+        padding: 16px;
+        border: none;
+        width: 95vw;
+        height: 20vh;
+    }
+
+    
+
+    /* Dropp down knapparnas still */
+    .dropdown-content, .dropdown-content2, .dropdown-content3, .dropdown-content4 {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+
+    
+    /* Texten */
+    .dropdown-content label, .dropdown-content2 label, .dropdown-content3 label, .dropdown-content3 label, .dropdown-content4 label {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size:calc(0.005rem + 2vw);
+    }
+    
+    
+    .dropdown-content label:hover, .dropdown-content2 label:hover, .dropdown-content3 label:hover, .dropdown-content4 label:hover 
+    {background-color: #ddd;}
+    /* Effekter & Visa individuela filter */
+    .dropdown:hover .dropdown-content, .dropdown2:hover .dropdown-content2, .dropdown3:hover .dropdown-content3,.dropdown4:hover .dropdown-content4
+    {display: block;}
+
+
+
+
+    .dropdown input[type="radio"]:checked + label {
+        background-color: #7004aa; 
+        color: white;
+    }
+
+    .dropdown2 input[type="radio"]:checked + label {
+        background-color: #961ab8; 
+        color: white;
+    }   
+        
+    
+    .dropdown3 input[type="radio"]:checked + label {
+            background-color: #aa0483; 
+            color: white;
+        }
+
+
+
+    .dropdown4 input[type="radio"]:checked + label {
+        background-color: #aa045f; 
         color: white;
     }
 
 
 
-.dropdown4 input[type="radio"]:checked + label {
-    background-color: #aa045f; 
-    color: white;
-}
+    
+    legend {
+        display: none;
+    }
+
+    fieldset {
+        width: 95vw;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    label {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 5px;
+        transition: background-color 0.3s ease;
+    }
 
 
 
-  
-legend {
-    display: none;
-}
 
-fieldset {
-    width: 95vw;
-    border: none;
-    padding: 0;
-    margin: 0;
-}
 
-input[type="radio"] {
-    display: none;
-}
 
-label {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ddd;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 5px;
-    transition: background-color 0.3s ease;
-}
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (min-width: 767) and (max-width: 1023px) {
+
+    
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25vh 60vh 90vh auto auto 30vh;
+
+        .arvo-regular {
+            font-family: "Arvo", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #4e7cc5;
+
+        #Buttons{
+        display: flex;
+        justify-content:space-around;
+        }
+        button{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img{
+            width: 18vw;
+            height: auto;
+        }
+        #Meny-icon, #Varukorg-icon, #Språk-icon{
+            width: 10vw;
+            height: 15vh;
+        }
+
+
+        #button-språk, #button-varukorg, #button-meny{
+            background-color: #74a0e7;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+            padding: 2.8vw;
+            font-size:calc(0.25rem + 2vw);
+            border: none;
+            width: 15vw;
+        }
+
+        #Buttons button:hover {background-color: #6594d9;}
+    
+        h1{
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            height:min-content;
+            font-size:calc(1.25rem + 2vw);
+            margin: 0;
+            margin-top: 7vh;  
+        }
+    }
+
+    #Banderoll{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #ddd;
+        align-items: center;
+        color: white;
+        background-image: url(./img/Banderool-bild.webp);
+        background-size:cover;
+        background-position: center;
+
+        img{
+            width: 20vw;
+            height: 40vh;
+        }
+
+        p{
+            font-size:calc(1.1rem + 2vw);
+            text-shadow: 2px 2px 4px #000000; 
+        }
+    }
+
+    #Filter{
+        display: flex;
+        flex-direction: column;
+        background-color: #4e7cc5; 
+        align-items: center;
+
+        button{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-size:calc(3rem + 2vw);
+            text-shadow: 2px 2px 4px #000000; 
+        }
+
+        .rotate{
+            transform:rotate(90deg);
+            transition: transform 0.3s ease-in-out;
+        }
+
+    #Arrowimg1,#Arrowimg2,#Arrowimg3,#Arrowimg4{
+    width: 5vw;
+    height: 10vh;
+    rotate: 90deg;
+    transition: transform 0.3s ease-out;
+    }
+
+    img{
+        width: 10vw;
+        height: 10vh;
+    }
+
+
+
+    .dropdown:hover .dropbtn {background-color: #600592;
+        #Arrowimg1{
+            transform:rotate(180deg);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+    
+
+    .dropdown2:hover .dropbtn2 {background-color: #800da0;
+        #Arrowimg2{
+            transform:rotate(180deg);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+        
+        
+    .dropdown3:hover .dropbtn3 {background-color: #9a0577;
+        #Arrowimg3{
+            transform:rotate(180deg);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+
+    .dropdown4:hover .dropbtn4 {background-color: #960554;
+        #Arrowimg4{
+            transform:rotate(180deg);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+
+    }
+
+
+
+
+
+    #Produkter{
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:repeat(6, 60vh);
+        gap: 2vw;
+        background-color: #4e7cc5;
+
+        article{
+            display: flex;
+            flex-direction: row;
+            background-color: #f1f1f1;
+            justify-content:space-between;
+            border: 1vw, solid, #4e7cc5;
+
+            .skridskoimg{
+                margin-left: 2.5vw;
+                border: 1vw,solid,#484444;
+                margin-top: 2.5vh;
+                margin-bottom: 2.5vh;
+            }
+
+            img{
+                width: 25vw;
+            }
+
+            .productVarukorgknapp{
+                background-color: green;
+                color: white;
+                text-shadow: 2px 2px 4px #000000;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+                width: 25vw;
+                padding: 0;
+                padding-top: 20vh;
+                padding-bottom: 20vh;
+                padding-left: 1vw;
+                padding-right: 1vw;
+                border: none;
+                border-radius: 15%;
+                margin-right: 2.5vw;
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .Varukorgimg{
+                    height: auto;
+                    width: 25vw;
+                    padding: 0;
+                }
+
+            }
+
+            .productVarukorgknapp:hover {background-color: darkgreen;}
+
+            .Prducbes{
+                background-color: gainsboro;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+                width: 30vw;
+                border-radius: 2.5rem;
+                font-size:calc(0.5rem + 2vw);
+                p{
+                    margin: 2vw;
+                }
+            }
+        }
+    }
+
+
+    #Storbeskrivning{
+        background-color: #595b5e;
+
+    #Produkt_stor{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+
+        
+        img{
+            margin-top: 10vh;
+            margin-left: 9vw;
+            margin-right: 9vw;
+            height:auto;
+            width:80vw;
+            border: 1vw,solid,#484444;
+        }
+
+        #Beskrivning-text{
+            margin-left: 9vw;
+            margin-right: 9vw;
+            padding-left: 2vw;
+            background-color: gray;
+            font-size:calc(1rem + 2vw);
+            border: 1vw,solid,#484444;
+        }
+    }
+
+    }
+
+
+    footer{
+        background-color: rgb(20, 19, 19);
+        color: white;
+        align-content: center;
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            
+            li{
+                a{
+                    color: white;
+                    font-size:calc(0.005rem + 2vw);
+                }
+                
+                
+            }
+        }
+    }
+
+
+
+
+
+    #btnid{  /* Färger för Button */
+        margin-top: 5vh;
+        background-color: #7004aa;
+    }
+    #btnid2{
+        background-color: #961ab8;
+    }
+    #btnid3{
+        background-color: #aa0483;
+    }
+    #btnid4{
+        background-color: #aa045f;
+    }
+
+
+    /* Stillen för knappen */
+    .dropbtn, .dropbtn2, .dropbtn3, .dropbtn4 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset; 
+        color: white;
+        padding: 16px;
+        border: none;
+        width: 95vw;
+        height: 20vh;
+    }
+
+    
+
+    /* Dropp down knapparnas still */
+    .dropdown-content, .dropdown-content2, .dropdown-content3, .dropdown-content4 {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+
+    
+    /* Texten */
+    .dropdown-content label, .dropdown-content2 label, .dropdown-content3 label, .dropdown-content3 label, .dropdown-content4 label {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size:calc(0.005rem + 2vw);
+    }
+    
+    
+    .dropdown-content label:hover, .dropdown-content2 label:hover, .dropdown-content3 label:hover, .dropdown-content4 label:hover 
+    {background-color: #ddd;}
+    /* Effekter & Visa individuela filter */
+    .dropdown:hover .dropdown-content, .dropdown2:hover .dropdown-content2, .dropdown3:hover .dropdown-content3,.dropdown4:hover .dropdown-content4
+    {display: block;}
+
+
+
+
+    .dropdown input[type="radio"]:checked + label {
+        background-color: #7004aa; 
+        color: white;
+    }
+
+    .dropdown2 input[type="radio"]:checked + label {
+        background-color: #961ab8; 
+        color: white;
+    }   
+        
+    
+    .dropdown3 input[type="radio"]:checked + label {
+            background-color: #aa0483; 
+            color: white;
+        }
+
+
+
+    .dropdown4 input[type="radio"]:checked + label {
+        background-color: #aa045f; 
+        color: white;
+    }
+
+
+
+    
+    legend {
+        display: none;
+    }
+
+    fieldset {
+        width: 95vw;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    label {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+@media only screen and (min-width: 1024px) {
+
+
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25vh 60vh 90vh auto auto 30vh;
+
+        .arvo-regular {
+            font-family: "Arvo", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+    }
+
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #4e7cc5;
+
+        #Buttons{
+        display: flex;
+        justify-content:space-around;
+        }
+        button{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img{
+            width: auto;
+            height: auto;
+        }
+        #Meny-icon, #Varukorg-icon, #Språk-icon{
+            width: 10vw;
+            height: 15vh;
+        }
+
+
+        #button-språk, #button-varukorg, #button-meny{
+            background-color: #74a0e7;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+            padding: 16px;
+            font-size:calc(0.25rem + 2vw);
+            border: none;
+            width: 15vw;
+        }
+
+        #Buttons button:hover {background-color: #6594d9;}
+    
+        h1{
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            height:min-content;
+            font-size:calc(2.4rem + 2vw);
+            margin: 0;
+            margin-top: 7vh;  
+        }
+    }
+
+    #Banderoll{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #ddd;
+        align-items: center;
+        color: white;
+        background-image: url(./img/Banderool-bild.webp);
+        background-size:cover;
+        background-position: center;
+
+        img{
+            width: 20vw;
+            height: 40vh;
+        }
+
+        p{
+            font-size:calc(1.8rem + 2vw);
+            text-shadow: 2px 2px 4px #000000; 
+        }
+    }
+
+    #Filter{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 25vh;
+        
+        background-color: #4e7cc5; 
+
+        button{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-size:calc(3rem + 2vw);
+            text-shadow: 2px 2px 4px #000000; 
+        }
+
+        .rotate{
+            transform:rotate(90deg);
+            transition: transform 0.3s ease-in-out;
+        }
+
+    #Arrowimg1,#Arrowimg2,#Arrowimg3,#Arrowimg4{
+    width: 5vw;
+    height: 10vh;
+    rotate: 90deg;
+    transition: transform 0.3s ease-out;
+    }
+
+    img{
+        width: 10vw;
+        height: 10vh;
+    }
+
+
+
+    .dropdown:hover .dropbtn {background-color: #600592;
+        #Arrowimg1{
+            transform:rotate(180deg);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+    
+
+    .dropdown2:hover .dropbtn2 {background-color: #800da0;
+        #Arrowimg2{
+            transform:rotate(180deg);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+        
+        
+    .dropdown3:hover .dropbtn3 {background-color: #9a0577;
+        #Arrowimg3{
+            transform:rotate(180deg);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+
+    .dropdown4:hover .dropbtn4 {background-color: #960554;
+        #Arrowimg4{
+            transform:rotate(180deg);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+
+    }
+
+
+
+
+
+    #Produkter{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:repeat(2, 60vh);
+        gap: 2vw;
+        background-color: #4e7cc5;
+
+        article{
+            display: flex;
+            flex-direction: row;
+            background-color: #f1f1f1;
+            justify-content:space-between;
+            border: 1vw, solid, #4e7cc5;
+
+            .skridskoimg{
+                margin-left: 2.5vw;
+                border: 1vw,solid,#484444;
+            }
+
+            img{
+                width: 25vw;
+            }
+
+            .productVarukorgknapp{
+                background-color: green;
+                color: white;
+                text-shadow: 2px 2px 4px #000000;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+                width: 25vw;
+                padding: 0;
+                padding-top: 20vh;
+                padding-bottom: 20vh;
+                padding-left: 1vw;
+                padding-right: 1vw;
+                border: none;
+                border-radius: 15%;
+                margin-right: 2.5vw;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .Varukorgimg{
+                    height: auto;
+                    width: 25vw;
+                    padding: 0;
+                }
+
+            }
+
+            .productVarukorgknapp:hover {background-color: darkgreen;}
+
+            .Prducbes{
+                background-color: gainsboro;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10vh;
+                margin-bottom: 10vh;
+                width: 30vw;
+                border-radius: 2.5rem;
+                font-size:calc(0.25rem + 1.5vw);
+            }
+        }
+    }
+
+
+    #Storbeskrivning{
+        background-color: #595b5e;
+
+    #Produkt_stor{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto auto;
+
+        
+        img{
+            padding-top: 10vh;
+            margin-left: 9vw;
+            margin-right: 9vw;
+            height:auto;
+            width:80vw;
+        }
+
+        #Beskrivning-text{
+            margin-left: 9vw;
+            margin-right: 9vw;
+            padding-left: 2vw;
+            background-color: gray;
+            font-size:calc(1rem + 2vw);
+        }
+    }
+
+    }
+
+
+    footer{
+        background-color: rgb(20, 19, 19);
+        color: white;
+        align-content: center;
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            
+            li{
+                a{
+                    color: white;
+                    font-size:calc(0.005rem + 2vw);
+                }
+                
+                
+            }
+        }
+    }
+
+
+
+
+
+    #btnid{  /* Färger för Button */
+        /* margin-top: 5vh;
+        background-color: #7004aa;
+    }
+    #btnid2{
+        background-color: #961ab8;
+    }
+    #btnid3{
+        background-color: #aa0483;
+    }
+    #btnid4{
+        background-color: #aa045f;
+    }
+
+
+    /* Stillen för knappen */
+    /*
+    .dropbtn, .dropbtn2, .dropbtn3, .dropbtn4 {
+        margin-left: 1.5vw;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset; 
+        color: white;
+        padding: 16px;
+        border: none;
+        width: 95vw;
+        height: 20vh;
+    }
+
+    
+
+    /* Dropp down knapparnas still */
+    /*
+    .dropdown-content, .dropdown-content2, .dropdown-content3, .dropdown-content4 {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin-left: 1.5vw;
+    }
+
+
+    
+    /* Texten */
+    /*
+    .dropdown-content label, .dropdown-content2 label, .dropdown-content3 label, .dropdown-content3 label, .dropdown-content4 label {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size:calc(0.005rem + 2vw);
+    }
+    
+    
+    .dropdown-content label:hover, .dropdown-content2 label:hover, .dropdown-content3 label:hover, .dropdown-content4 label:hover 
+    {background-color: #ddd;}
+    /* Effekter & Visa individuela filter */
+    /*
+    .dropdown:hover .dropdown-content, .dropdown2:hover .dropdown-content2, .dropdown3:hover .dropdown-content3,.dropdown4:hover .dropdown-content4
+    {display: block;}
+
+
+
+
+    .dropdown input[type="radio"]:checked + label {
+        background-color: #7004aa; 
+        color: white;
+    }
+
+    .dropdown2 input[type="radio"]:checked + label {
+        background-color: #961ab8; 
+        color: white;
+    }   
+        
+    
+    .dropdown3 input[type="radio"]:checked + label {
+            background-color: #aa0483; 
+            color: white;
+        }
+
+
+
+    .dropdown4 input[type="radio"]:checked + label {
+        background-color: #aa045f; 
+        color: white;
+    }
+
+
+
+    
+    legend {
+        display: none;
+    }
+
+    fieldset {
+        width: 95vw;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    label {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ddd;
+        border-radius: 5px;
+         cursor: pointer;
+        margin: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+
+
+}  
